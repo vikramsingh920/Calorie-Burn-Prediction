@@ -1,8 +1,15 @@
 # 🔥 Calories Burned Predictor & Fitness Analytics
 
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Vercel-success?style=for-the-badge&logo=vercel)](https://calorie-burn-prediction-kappa.vercel.app/)
+[![React](https://img.shields.io/badge/Frontend-React_19-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://calorie-burn-prediction-kappa.vercel.app/)
+[![FastAPI](https://img.shields.io/badge/Backend-FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://github.com/vikramsingh920/Calorie-Burn-Prediction)
+[![Machine Learning](https://img.shields.io/badge/ML-Scikit--Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)](https://github.com/vikramsingh920/Calorie-Burn-Prediction)
+
+> 🚀 **Live Web Application:** [https://calorie-burn-prediction-kappa.vercel.app](https://calorie-burn-prediction-kappa.vercel.app/)
+
 A full-stack, sports-science driven Machine Learning web application that predicts personal caloric expenditure during exercise with high accuracy ($R^2 > 0.99$) and provides deep physiological insights into energy expenditure, heart rate training zones, and metabolic baselines.
 
-**the platform pairs a high-performance **Random Forest Regressor** with a responsive **React 19 / Vite** dashboard.
+Inspired by the clean, utilitarian UX of **[tdeecalculator.net](https://tdeecalculator.net/)**, the platform pairs a high-performance **Random Forest Regressor** with a responsive **React 19 / Vite** dashboard.
 
 ---
 
@@ -48,6 +55,7 @@ A full-stack, sports-science driven Machine Learning web application that predic
 
 ### Frontend
 * **Framework:** React 19 + Vite 6
+* **Deployment:** Vercel ([Live Link](https://calorie-burn-prediction-kappa.vercel.app/))
 * **Styling:** Modern Vanilla CSS with CSS Variables / Design Tokens (zero heavy UI libraries)
 * **Visualizations:** Native, lightweight, responsive SVG charts (no heavy chart dependencies)
 * **State & Persistence:** React Hooks (`useState`, `useEffect`) + Browser `localStorage`
@@ -99,13 +107,20 @@ Calorie-Burn-Prediction/
 
 ## 🚀 Getting Started
 
-### Prerequisites
+### 🌐 Live Deployment
+* **Web App (Vercel):** [https://calorie-burn-prediction-kappa.vercel.app](https://calorie-burn-prediction-kappa.vercel.app/)
+
+---
+
+### Local Development Setup
+
+#### Prerequisites
 * **Python:** 3.10 or higher (`py` launcher on Windows)
 * **Node.js:** v18 or higher with `npm`
 
 ---
 
-### Step 1: Backend Setup (FastAPI)
+#### Step 1: Backend Setup (FastAPI)
 
 1. Clone or open the repository directory:
    ```powershell
@@ -119,14 +134,14 @@ Calorie-Burn-Prediction/
 
 3. Start the FastAPI backend:
    ```powershell
-   py -m uvicorn api:app --host 127.0.0.1 --port 8000
+   py api.py
    ```
    * **API URL:** [http://127.0.0.1:8000](http://127.0.0.1:8000)
    * **Interactive Swagger Docs:** [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
 
 ---
 
-### Step 2: Frontend Setup (React + Vite)
+#### Step 2: Frontend Setup (React + Vite)
 
 1. Open a new terminal and navigate to the `Frontend` directory:
    ```powershell
@@ -142,11 +157,11 @@ Calorie-Burn-Prediction/
    ```powershell
    npm run dev
    ```
-   * **Web App URL:** [http://127.0.0.1:5173](http://127.0.0.1:5173)
+   * **Local Web App URL:** [http://127.0.0.1:5173](http://127.0.0.1:5173)
 
 ---
 
-### Alternative: Run via Streamlit
+#### Alternative: Run via Streamlit
 
 If you prefer running the single-file Streamlit application:
 ```powershell
@@ -185,4 +200,3 @@ py train.py
 
 **Made with ❤️ by Vikram**  
 *Fitness planning calculations and machine learning modeling for educational purposes.*
-
